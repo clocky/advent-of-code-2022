@@ -54,5 +54,5 @@ for section in sections:
         print(f"{pair}")
     print()
  
-# print(f"{assignments} pairs fully contain the other.")
+print(f"{assignments} pairs fully contain the other.")
 print(f"{overlaps} pairs overlap the other.")
