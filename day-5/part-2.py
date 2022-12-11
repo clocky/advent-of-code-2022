@@ -29,16 +29,16 @@ with open("input.txt", "r") as f:
 
         if action == "move":
             cargo: list = stacks[source][-quantity:]
-            print(f"\nMoving {quantity} {cargo} from stack {source} to stack {destination}")
-            pprint(stacks)
+            # print(f"\nMoving {quantity} {cargo} from stack {source} to stack {destination}")
+            # pprint(stacks)
             stacks[destination].extend(cargo)
             for i in range(quantity):
                 stacks[source].pop()
-            pprint(stacks)
+            # pprint(stacks)
 
     answer: str = ""
     for stack in stacks:
-        print(f"Stack {stack} has {stacks[stack][-1]} on top")
+        # print(f"Stack {stack} has {stacks[stack][-1]} on top")
         answer = answer + stacks[stack][-1]
     
     print(f"Answer: {answer}")
